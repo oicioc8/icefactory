@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>icefactory</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <style>
+        * {box-sizing: border-box;}
+        .slider{width: 100%;margin: 0 auto;}
+        .slick-slide{margin: 0;}
+        .slick-slide img{width: 100%;}
+   
+        .slick-prev::before,
+        .slick-next::before {color:black}
+   
+       .slick-slide {
+           transition: all ease-in-out 0.3s;opacity: 0.2;
+       }
+       .slick-active{opacity: 0.5;}
+       .slick-current{opacity: 1;}
+    </style>
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="#"><img src="images/if_logo.png" alt="logo"></a></div>
+        <nav class="gnb">
+            <a href="#" class="gnb_btn"><img src="images/gnb_btn.png" alt="gnb"></a>
+           <ul class="gnb_list">
+             <li><a href="about.html"><h3>ABOUT</h3><p>브랜드 소개 / 캐릭터 소개</p></a></li>
+             <li><a href="product.html"><h3>PRODUCT</h3><p>세트 상품 / 단품</p></a></li>
+             <li><a href="detail.html"><h3>DETAIL</h3><p>제품소개</p></a></li>
+             <li><a href="store.html"><h3>STORE</h3><p>오프라인 매장 / 자판기</p></a></li>
+             <div class="circle2">
+                <div class="box2"></div>
+                <div class="box2"></div>
+                <div class="box2"></div>
+                <div class="box2"></div>
+                <div class="box2"></div>
+                <div class="box2"></div>
+                <div class="box2"></div>
+            </div>
+           </ul>
+           <a href="login.html" class="lgn_btn"><img src="images/Generic avatar.png" alt=""></a>
+        </nav>
+        <div class="circle1">
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <div id="container">
+        <div class="main_visual">
+            <div class="regular slider">
+                <div><img src="images/vis1.png" alt="v1"></div>
+                <div><img src="images/vis2.png" alt="v2"></div>
+                <div><img src="images/vis3.png" alt="v3"></div>
+            </div>
+        </div>
+        <!-- slide end -->
+
+        <div id="best">
+            <div class="tit">
+                <h3>BEST</h3><a href="#"><img src="images/more1.png" alt="more1"></a>
+            </div>
+            <ul class="best_li">
+                <li><a href="#"><img src="images/best1.png" alt="best1"><h2>아이스크림 11종 세트</h2><p>아이스 팩토리의 11가지 맛을 다양하게 즐기는 세트</p><span>34,400 원</span></a></li>
+                <li><a href="#"><img src="images/best2.png" alt="best2"><h2>과일 샤벳 아이스바 6종</h2><p>상큼한 천연 과일 샤벳 아이스바를 6종 선택 구매</p><span>17,800 원</span></a></li>
+            </ul>
+        </div>
+        <div id="flavor">
+            <div class="tit">
+                <h3>FLAVOR</h3><a href="#"><img src="images/more2.png" alt="more2"></a>
+            </div>
+            <ul class="flavor_li">
+                <li><a href="#"><img src="images/fv1.png" alt="flavor1"><h2>제주 한라봉 샤벳</h2></a></li>
+                <li><a href="#"><img src="images/fv2.png" alt="flavor2"><h2>제주 천혜향 샤벳</h2></a></li>
+                <li><a href="#"><img src="images/fv3.png" alt="flavor3"><h2>수박 샤벳</h2></a></li>
+                <li><a href="#"><img src="images/fv4.png" alt="flavor4"><h2>자두 샤벳</h2></a></li>
+                <li><a href="#"><img src="images/fv5.png" alt="flavor5"><h2>복숭아 샤벳</h2></a></li>
+                <li><a href="#"><img src="images/fv6.png" alt="flavor6"><h2>망고 샤벳</h2></a></li>
+            </ul>
+        </div>
+        
+     <!-- container end  -->
+    <footer>
+        <ul class="flist">
+            <li><a href="#">전체서비스</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">PC버전</a></li>
+        </ul>
+        <p class="copyright">copyright 2025 아이스팩토리. all right reserved.</p>
+    </footer>
+    <!-- footer end -->
+     
+    <script src="slick/slick.js"></script>
+    <script>
+         $(function(){
+             $('.regular').slick({
+              dots:true,
+              arrows:false,
+              Infinite:true,
+              slidesToShow:1,
+              slidesToScroll:1,
+              autoplay:true
+             }); 
+         });
+    </script>
+</body>
+</html>

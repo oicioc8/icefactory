@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #input_div {width: 300px;height: auto;border-radius: 8px;
+       border: 2px solid #777;padding: 10px 20px;}
+       
+        label{font-size: 1.25em; width: 80px;height: 40px;display: inline-block;}
+        select{width:120px;height: 40px;}
+
+        input[type=text]{border:1px solid #999;width:80px;height: 40px;
+        text-align: right;font-size: 1em;}
+        input[type=button]{border:0;width:40px;height: 40px;font-size: 2em;
+        background-color: #999;color: #000;vertical-align: middle;
+        border-radius: 4px;}
+
+        #total_count_view {border: 0;font-size: 1.5em; color: red;}
+
+    </style>
+    
+</head>
+<body>
+    
+ <div id="input_div">
+
+    <label for=""> size  </label>
+    <select name="fsize" id="fs">
+        <option value="--">크기선택</option>
+        <option value="s">스몰</option>
+        <option value="m">미디움</option>
+        <option value="l">라지</option>
+        <option value="xl">엑스라지</option>
+    </select><br><br>
+
+    <label for=""> color  </label>
+    <select name="fColor" id="fc">
+        <option value="--">색상선택</option>
+        <option value="red">빨간색</option>
+        <option value="green">그린색</option>
+        <option value="blue">파란색</option>
+        <option value="orange">오렌지색</option>
+    </select><br><br>
+
+  <label for=""> 수량 </label>
+    <input type="text" size="25" value="1" id="count">
+    <input type="button" value="+" id="plus" onclick="plus()">
+    <input type="button" value="-" id="minus" onclick="minus()">
+   <p></p>
+  <label for="">최종가격</label> <input type="text" value="25000" id="total_count" hidden=hidden />
+  <input type="text" value="25000" id="total_count_view"  /><span>원</span>
+
+</div>
+
+  <script>
+    var count = 1;
+    var countEl = document.getElementById("count");
+    var total_count = document.getElementById("total_count"); //추가
+    var total_count_view = document.getElementById("total_count_view"); //추가
+    function plus(){
+    count++;
+    countEl.value = count;
+    total_count_view.value = total_count.value * countEl.value; //추가
+    }
+    function minus(){
+    
+    if (count > 1) {
+        count--;
+        countEl.value = count;
+    total_count_view.value = total_count_view.value - total_count.value; //추가  
+    }  
+    }
+</script>
+</body>
+</html>

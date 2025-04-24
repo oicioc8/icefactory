@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="css/store.css">
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="http://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+            $('ul.tabs li').click(function(){
+                var tab_id = $(this).attr('data-tab');
+
+                $('ul.tabs li').removeClass('current');
+                $('.tab-content').removeClass('current');
+
+                $(this).addClass('current');
+                $("#"+tab_id).addClass('current');
+            });
+        });
+      </script>
+      
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src="images/if_logo.png" alt="logo"></a></div>
+        <nav class="gnb">
+            <a href="#" class="gnb_btn"><img src="images/gnb_btn.png" alt="gnb"></a>
+           <ul class="gnb_list">
+             <li><a href="about.html"><h3>ABOUT</h3><p>브랜드 소개 / 캐릭터 소개</p></a></li>
+             <li><a href="product.html"><h3>PRODUCT</h3><p>세트 상품 / 단품</p></a></li>
+             <li><a href="detail.html"><h3>DETAIL</h3><p>제품소개</p></a></li>
+             <li><a href="store.html"><h3>STORE</h3><p>오프라인 매장 / 자판기</p></a></li>
+             <div class="circle2">
+                <div class="box2"></div>
+                <div class="box2"></div>
+                <div class="box2"></div>
+                <div class="box2"></div>
+                <div class="box2"></div>
+                <div class="box2"></div>
+                <div class="box2"></div>
+            </div>
+           </ul>
+           <a href="login.html" class="lgn_btn"><img src="images/Generic avatar.png" alt=""></a>
+        </nav>
+        <div class="circle1">
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+        </div>
+    </header>
+    <!-- header end -->
+     <div id="container_sub">
+        <h1 class="store_tit">STORE</h1>
+        <div id="map">
+        </div>
+        <div class="sub">
+            <span>각 지역의 아이스팩토리를 확인해보세요!</span>
+            <p>▼</p>
+        </div>
+        <div class="address">
+            <ul class="tabs">
+                <li class="tab-link" data-tab="tab-1">지역 선택</li>
+                <li class="tab-link current" data-tab="tab-2">서울</li>
+                <li class="tab-link" data-tab="tab-3">인천</li>
+                <li class="tab-link" data-tab="tab-4">경기</li>
+                <li class="tab-link" data-tab="tab-5">강원도</li>
+                <li class="tab-link" data-tab="tab-6">대구</li>
+                <li class="tab-link" data-tab="tab-7">충청도</li>
+                <li class="tab-link" data-tab="tab-8">경상도</li>
+                <li class="tab-link" data-tab="tab-9">전라도</li>
+                <li class="tab-link" data-tab="tab-10">부산</li>
+            </ul>
+            <div id="tab-2" class="tab-content current">
+                <dl class="adr">
+                    <dt>롯데월드 4층</dt>
+                    <dd>송파구 올림픽로 240, 롯데월드 어드벤처 4층 풍선비행 앞</dd>
+
+                    <dt>롯데월드 매직</dt>
+                    <dd>송파구 올림픽로 240, 롯데월드 어드벤처 매직 아일랜드</dd>
+
+                    <dt>현대시티 아울렛 가든파이브</dt>
+                    <dd>송파구 충민로 66 (문정동 634), 현대시티아울렛 가든파이브점 4층</dd>
+
+                    <dt>용산 아이파크몰 4층</dt>
+                    <dd>용산구 한강대로 23길 55 (한강로 3가), 아이파크몰 용산점 4층</dd>
+
+                    <dt>용산 아이파크몰 7층</dt>
+                    <dd>용산구 한강대로 23길 55 (한강로 3가), 아이파크몰 용산점 7층</dd>
+
+                    <dt>남산 타워</dt>
+                    <dd>중구 장충단로 59, 남산서울타워 T5층</dd>
+
+                    <dt>코엑스 도서관</dt>
+                    <dd>강남구 봉은사로 524, 스타필드 코엑스몰 별마당 도서관</dd>
+
+                    <dt>코엑스 아쿠아</dt>
+                    <dd>강남구 봉은사로 524, 스타필드 코엑스몰 아쿠아리움</dd>
+
+                    <dt>키자니아 서울</dt>
+                    <dd>송파구 올림픽로 240, 키자니아 서울 2층</dd>
+
+                    <dt>뉴월드타운</dt>
+                    <dd>강서구 방화동 272-57 뉴월드타운 301호, 무인천하</dd>
+                </dl>
+            </div>
+            <div id="tab-3" class="tab-content">
+                <ul class="adr">
+                    <dt>인천 엘리웨이</dt>
+                    <dd>인천광역시 미추홀구 도화동 1011, 엘리웨이 인천 컬쳐동 2층</dd>
+                    <dt>터치앤조이</dt>
+                    <dd>인천광역시 연수구 인천타워대로 257 (송도동) C동 1층, C-135호 (아트포레)</dd>
+                    <dt>디앤플러스</dt>
+                    <dd>인천광역시 연수구 송도미래로 30 (송도동) A동 5층, 505호</dd>
+                </ul>
+            </div>
+            <div id="tab-4" class="tab-content">
+                <dl class="adr">
+                    <dt>롯데 아울렛 이천점 2층</dt>
+                    <dd>경기도 이천시 호법면 단천리 864, 롯데 프리미엄 아울렛 이천점 2층</dd>
+                    <dt>롯데 아울렛 이천점 3층</dt>
+                    <dd>경기도 이천시 호법면 단천리 864, 롯데 프리미엄 아울렛 이천점 3층</dd>
+                    <dt>신세계 여주 프리미엄 아울렛</dt>
+                    <dd>경기 여주시 명품로 360, 여주 프리미엄 아울렛 테이스트 빌리지 내</dd>
+                    <dt>기흥 리빙센터</dt>
+                    <dd>경기 용인시 기흥구 고매동 889, 리빙 파워 센터 지하 1층</dd>
+                    <dt>동탄 라크몽</dt>
+                    <dd>경기도 화성시 송도 726-1 라크몽 B1층, C-11 글린공원 내</dd>
+                    <dt>세디빌</dt>
+                    <dd>경기도 평택시 현신 6길 17, 1층 상가 (용이동, 세디빌), 무인 커피앤크림</dd>
+                </dl>
+            </div>
+            <div id="tab-5" class="tab-content">
+                <dl class="adr">
+                    <dt>속초 대명리조트</dt>
+                    <dd>강원도 고성군 토성면 미시령 옛길 1153, 소노문 리조트 키즈파크</dd>
+                    <dt>동강 시스타</dt>
+                    <dd>강원도 영월군 영월읍 사지막길 160</dd>
+                </dl>
+            </div>
+            <div id="tab-6" class="tab-content">
+                <dl class="adr">
+                    <dt>아이플레이코리아 대구</dt>
+                    <dd>대구광역시 동구 팔공로 49길 16, 롯데아울렛 이시아폴리스 1층</dd>
+                </dl>
+            </div>
+            <div id="tab-7" class="tab-content">
+                <dl class="adr">
+                    <dt>롯데시네마 당진</dt>
+                    <dd>충청남도 당진시 시청 2로 49-19, 롯데시네마 당진 7층</dd>
+                    <dt>무인천국</dt>
+                    <dd>충청남도 아산시 배방읍 연화로 133, 1층 108호, 무인천국</dd>
+                </dl>
+            </div>
+            <div id="tab-8" class="tab-content">
+                <dl class="adr">
+                    <dt>스타프리미어</dt>
+                    <dd>경상남도 김해시 한림면 김해대로 1156, 스타프리미어 D동, 4층 라운지 내</dd>
+                    <dt>베러먼데이 상남사거리점</dt>
+                    <dd>경상남도 창원시 성산구 단정로 18</dd>
+                </dl>
+            </div>
+            <div id="tab-9" class="tab-content">
+                <dl class="adr">
+                    <dt>대명진도</dt>
+                    <dd>전라남도 진도군 의신면 송군길 30-40, 쏠비치 호텔앤리조트 진도</dd>
+                    <dt>여수 미스터컵</dt>
+                    <dd>전라남도 여수시 성산 6길 54-1 (화장동), 미스터컵</dd>
+                </dl>
+            </div>
+            <div id="tab-10" class="tab-content">
+                <dl class="adr">
+                    <dt>신세계 부산 키자니아</dt>
+                    <dd>부산광역시 해운대구 센텀 4로 15 (우동), 신세계 센텀시티몰 키자니아 부산 4층</dd>
+                    <dt>베스트 웨스턴플러스 호텔</dt>
+                    <dd>부산광역시 서구 송도해변로 97, 베스트웨스턴플러스호텔 3층</dd>
+                </dl>
+            </div>
+
+
+     </div>
+
+</div>
+     <footer>
+        <ul class="flist">
+            <li><a href="#">전체서비스</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">PC버전</a></li>
+        </ul>
+        <p class="copyright">copyright 2025 아이스팩토리. all right reserved.</p>
+    </footer>
+    
+<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript">
+var map_div = document.getElementById("map");//지도가 표시될 영역 아이디
+var latlng = new google.maps.LatLng(37.5572518,126.864441);//mdoc사옥
+                  //37.6447084,126.6670806 이젠
+                          
+									
+var gmap = new google.maps.Map(
+	map_div, {
+	zoom:16, //확대축소
+	center: latlng,
+	mapTypeId: google.maps.MapTypeId.ROADMAP,
+	scrollwheel: false //휠로 확대축소 여부
+});	
+var marker = new google.maps.Marker({
+	position: latlng,
+	map: gmap,
+	title:"(주)MDOC" //타이틀 말풍선
+});
+</script>
+    
+</body>
+</html>

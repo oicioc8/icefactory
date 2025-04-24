@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>폼URL이벤트</title>
+	<script>
+	 //함수정의
+     function  selectURL(){
+      var res = document.form1.addr.options[form1.addr.selectedIndex].value;
+	  //location.href=res; //res 주소를 웹브라우져에 띄운다 
+      window.open(res);	 
+	 }
+	</script>
+</head>
+<body>
+	<!-- 함수호출 -->
+    <h1> URL 선택</h1>
+	<form action="#" name="form1">
+	 <select name="addr" onchange="selectURL()">
+      <option value="----" selected="selected">지역 선택</option>
+	  <option value="store-s.html">서울</option>
+	  <option value="store-i.html">인천</option>
+      <option value="store-gy.html">경기</option>
+      <option value="store-ga.html">강원도</option>
+      <option value="store-d.html">대구</option>
+	  <option value="store-c.html">충청도</option>
+	  <option value="store-gs.html">경상도</option>
+	  <option value="store-j.html">전라도</option>
+	  <option value="store-b.html">부산</option>
+	 </select>	
+	</form>
+</body>
+</html>

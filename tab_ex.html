@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>tab</title>
+    <style>
+    *{margin: 0;padding: 0;}
+    a{text-decoration: none;color: #333;}
+    li{list-style: none;}
+    body{margin-top: 100px;	font-family:Arial;	line-height: 1.6}
+
+    #container{	width: 400px;margin: 0 auto;   }
+    ul.tabs{margin: 0px;	padding: 0px;	list-style: none;}
+    ul.tabs li{	background: none;	color: #222;	display: inline-block;
+        padding: 10px 15px;	cursor: pointer;}
+    ul.tabs li.current{	background: #333;	color: #dddbdb;}
+    .tab-content{	display: none;	background: #ededed;	padding: 15px;}
+    .tab-content.current{display: block;  height: 220px;}
+
+    /* glist */
+    #tab-1 {position: relative;}
+    .more {position:absolute;right:25px;top:20px;font-size: 0.75em; color: red;}
+    
+    .glist  {position:absolute;left:20px;top:50px}
+    .glist li{width:370px;overflow:auto;padding:5px 0}
+    .glist li a{float:left;text-indent:10px;   text-decoration: none;color: #333; }
+    .glist li a:hover{text-decoration: underline;color: red;}
+    .glist li span{float:right;margin-right:10px}
+    </style>
+    <script src="http://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+            $('ul.tabs li').click(function(){
+                var tab_id = $(this).attr('data-tab');
+
+                $('ul.tabs li').removeClass('current');
+                $('.tab-content').removeClass('current');
+
+                $(this).addClass('current');
+                $("#"+tab_id).addClass('current');
+            });
+        });
+      </script>
+</head>
+<body>
+    <div id="container">
+        <ul class="tabs">
+            <li class="tab-link current" data-tab="tab-1">서울</li>
+            <li class="tab-link" data-tab="tab-2">인천</li>
+            <li class="tab-link" data-tab="tab-3">경기도</li>
+            <li class="tab-link" data-tab="tab-4">강원도</li>
+            <li class="tab-link" data-tab="tab-5">대구</li>
+            <li class="tab-link" data-tab="tab-6">충청도</li>
+            <li class="tab-link" data-tab="tab-6">경상도</li>
+            <li class="tab-link" data-tab="tab-6">전라도</li>
+            <li class="tab-link" data-tab="tab-6">부산</li>
+
+        </ul>
+
+        <div id="tab-1" class="tab-content current"> 
+            <dl>
+                <dt>롯데월드 4층</dt>
+                <dd>송파구 올림픽로 240, 롯데월드 어드벤처 4층 풍선비행 앞</dd>
+                <dt>롯데월드 매직</dt>
+                <dd>송파구 올림픽로 240, 롯데월드 어드벤처 매직 아일랜드</dd>
+                <dt>현대시티 아울렛 가든파이브</dt>
+                <dd>송파구 충민로 66 (문정동 634), 현대시티아울렛 가든파이브점 4층</dd>
+                <dt>용산 아이파크몰 4층</dt>
+                <dd>용산구 한강대로 23길 55 (한강로 3가), 아이파크몰 용산점 4층</dd>
+                <dt>용산 아이파크몰 7층</dt>
+                <dd>용산구 한강대로 23길 55 (한강로 3가), 아이파크몰 용산점 7층</dd>
+                <dt>남산 타워</dt>
+                <dd>중구 장충단로 59, 남산서울타워 T5층</dd>
+                <dt>코엑스 도서관</dt>
+                <dd>강남국 봉은사로 524, 스타필드 코엑스몰 별마당 도서관</dd>
+                <dt>코엑스 아쿠아</dt>
+                <dd>강남구 봉은사로 524, 스타필드 코엑스몰 아쿠아리움</dd>
+                <dt>키자니아 서울</dt>
+                <dd>송파쿠 올림픽로 240, 키자니아 서울 2층</dd>
+                <dt>뉴월드타운</dt>
+                <dd>강서구 방화동 272-57 뉴월드타운 301호, 무인천하</dd>
+            </dl>
+            <a href="#" class="more">더보기▶</a>
+        </div>
+        <div id="tab-2" class="tab-content"><p>tab2입니다.</p></div>
+        <div id="tab-3" class="tab-content"><p>tab3입니다.</p></div>
+    </div>
+    
+</body>
+</html>

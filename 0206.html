@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 글꼴</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        #wrap{font-size: 16px;color: #000;}
+
+        @media screen and (min-width: 480px) {
+            h1{font-size: 2em; color: #f00;}
+            p{font-size: 1.25em;}
+        }
+        @media screen and (min-width: 468px) {
+            h1{font-size: 1.75em; color: #00f;}
+            p{font-size: 1em;}
+        }
+        @media screen and (min-width: 1024px) {
+            h1{font-size: 2em;color: #0f0;}
+            p{font-size: 0.75em}
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>제목입니다</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa distinctio cumque amet eos eligendi corporis, mollitia possimus, at molestiae esse corrupti inventore fugiat nam incidunt repellat vitae ea suscipit aut deleniti placeat totam adipisci error. Impedit veritatis illo nostrum cupiditate expedita saepe recusandae, quia sint amet. Earum, consequatur. Illo, totam.</p>
+    </div>
+</body>
+</html>

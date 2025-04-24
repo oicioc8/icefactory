@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <style>
+
+        #test_obj{width: 10px;}
+
+    </style>
+
+</head>
+
+<body>
+    <button onclick="minus()">-</button>
+    <input type="text" id="test_obj" value="1"/>
+    <button onclick="plus()">+</button>
+<script>
+    function plus() {
+        var tmp = document.getElementById("test_obj").value;
+        tmp++;
+        document.getElementById("test_obj").value = tmp;
+    }
+    function minus() {
+        var tmp = document.getElementById("test_obj").value;
+        tmp--;
+        document.getElementById("test_obj").value = tmp;
+    }
+</script>
+
+</body>
+
+</html>
