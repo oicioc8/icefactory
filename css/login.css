@@ -1,0 +1,37 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+
+/* container_sub style (login) */
+html, body{background-color: #78cadd;}
+
+#container_sub{padding: 35% 10%;}
+#container_sub::after{content: '';display: block;clear: both;}
+#container_sub .login_tit{color: #fff;font-size: 1.6em;text-align: left;display: block;
+    width: 100%;
+    border-bottom: 2px solid #fff; margin-bottom: 40px;}
+
+form .inputText input{width: 100%;height: 45px;padding: 10px;
+    box-sizing: border-box;margin-bottom: 15px;
+    border: 0;font-size: 1.2em;line-height: 100px;}
+form .save{font-size: 0.95em;display: inline-block;width: 100%;margin: 15px 10px;float: left;}
+form .save a{float: right;margin-right: 25px;}
+form .save label{font-size: 0.95em;color: #373737;}
+
+form .inputBtn{width: 100%;}
+form .inputBtn input{width: 100%;height: 45px;line-height: 45px;
+    background-color: #e94190;color: #fff;
+    font-size: 1.3em;font-weight: bold;
+    border: 0;cursor: pointer;margin-top: 20px;}
+
+.join a{display:block;width: 98%;height: 40px;line-height: 40px;
+    background-color: #78cadd;
+    text-align: center;color: #fff;border: 3px solid #fff;
+    font-size: 1.3em;font-weight: bold;
+    cursor: pointer;margin-top: 15px;}
+.join p{display: block;position: absolute;color: #e94190; right: 20%;line-height: 36px;}
+.join span{display: block;width: 98%;height: 25px;text-align: center;background-color: #e94190;
+    border-radius: 15px;font-size: 0.9em;color:#fff;line-height: 25px;}
+
+

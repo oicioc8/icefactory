@@ -1,0 +1,74 @@
+@charset "utf-8";
+@font-face {font-family:'KoPub-Batang-Light'; 
+	src: url('./kopub_font/KoPub-Batang-Light.woff') format('woff');  
+	}
+  @font-face {font-family:'KoPub-Batang-Medium'; 
+	src: url('./kopub_font/KoPub-Batang-Medium.woff') format('woff');  
+	}
+  @font-face {font-family: 'KoPub-Batang-Bold'; 
+	src:url('./kopub_font/KoPub-Batang-Bold.woff') format('woff');  
+	} 
+  @font-face {font-family: 'KoPub-Dotum-Light'; 
+	src:url('./kopub_font/KoPub-Dotum-Light.woff') format('woff');  
+	}
+  @font-face {font-family: 'KoPub-Dotum-Midium'; 
+	src:url('./kopub_font/KoPub-Dotum-Medium.woff') format('woff');  
+	}
+  @font-face {font-family: 'KoPub-Dotum-Bold'; 
+	src:url('./kopub_font/KoPub-Dotum-Bold.woff') format('woff');  
+	}
+
+  @font-face {
+    font-family: 'NanumSquareRoundB';
+    font-weight: 600;
+    src: url('../nanum-square-round/NanumSquareRoundB.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'NanumSquareRoundEB';
+    font-weight: 800;
+    src: url('../nanum-square-round/NanumSquareRoundEB.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'NanumSquareRoundL';
+    font-weight: 200;
+    src: url('../nanum-square-round/NanumSquareRoundL.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'NanumSquareRoundOTFB';
+    font-weight: 600;
+    src: url('../nanum-square-round/NanumSquareRoundOTFB.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'NanumSquareRoundOTFEB';
+    font-weight: 800;
+    src: url('../nanum-square-round/NanumSquareRoundOTFEB.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'NanumSquareRoundOTFL';
+    font-weight: 400;
+    src: url('../nanum-square-round/NanumSquareRoundOTFL.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'NanumSquareRoundOTFR';
+    font-weight: 400;
+    src: url('../nanum-square-round/NanumSquareRoundOTFR.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'NanumSquareRoundR';
+    font-weight: 400;
+    src: url('../nanum-square-round/NanumSquareRoundR.woff') format('woff');
+  }
+/*reset*/
+html,body { width:100%;height:100%;background-color: #ffffff; }
+* {margin:0;padding:0}
+body,h1,h2,h3,p,div,form,input,button{
+    font-family: 'NanumSquareRoundOTFB';
+    font-size: 16px;
+    color: #303030;}
+ul,ol,li {list-style:none}
+img {vertical-align:top}
+img,fieldset,iframe {border:0}
+table {border-collapse:collapse}
+
+ a {text-decoration:none;color:#555}
+ .skip_nav, .blind {position:absolute;top:-9999px;font-size:0}

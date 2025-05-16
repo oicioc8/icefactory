@@ -1,0 +1,38 @@
+@import url(common.css);
+
+footer {
+    position: relative;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #303030;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'NanumSquareRoundOTFR';
+}
+
+footer .flist li a{
+    color: #fff;
+    font-size: 0.8em
+}
+footer .flist li{
+    margin-top: 10px 5px 0 5px;
+    float: left;
+    padding: 0 3px 3px 3px;
+}
+footer ul li:after{
+    content: '|';
+    color: #ccc;
+    margin-left: 5px;
+}
+footer ul li:last-child:after{
+    content: '';
+} 
+footer .copyright{
+    text-align: left;
+    font-size: 0.8em;
+    color: #ccc;
+    font-family: 'NanumSquareRoundOTFR';
+}

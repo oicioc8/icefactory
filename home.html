@@ -4,31 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>icefactory</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
     <style>
         * {box-sizing: border-box;}
-        .slider{width: 100%;margin: 0 auto;}
-        .slick-slide{margin: 0;}
-        .slick-slide img{width: 100%;}
-   
+        .slider{
+            display: block;
+            z-index: 999;
+            position: relative;
+            top: 85px;
+            width: 100%;
+            height: 300px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .slick-slide img{
+            height: 100%;
+            margin: 0 auto;
+        }
+        .slider::after{
+            content: '';
+            clear: both;
+
+        }
         .slick-prev::before,
         .slick-next::before {color:black}
    
        .slick-slide {
-           transition: all ease-in-out 0.3s;opacity: 0.2;
+           transition: all ease-in-out 0.3s;opacity: 1;
        }
-       .slick-active{opacity: 0.5;}
+       .slick-active{opacity: 1;}
        .slick-current{opacity: 1;}
     </style>
     <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
+
 </head>
 
 <body>
     <header>
-        <div class="logo"><a href="#"><img src="images/if_logo.png" alt="logo"></a></div>
+        <a href="#" class="logo"><img src="images/if_logo.png" alt="아이스팩토리 로고"></a>
         <nav class="gnb">
             <a href="#" class="gnb_btn"><img src="images/gnb_btn.png" alt="gnb"></a>
            <ul class="gnb_list">
@@ -46,7 +62,7 @@
                 <div class="box2"></div>
             </div>
            </ul>
-           <a href="login.html" class="lgn_btn"><img src="images/Generic avatar.png" alt=""></a>
+           <a href="login.html" class="lgn_btn"><img src="images/lgn_btn.png" alt="로그인/회원가입"></a>
         </nav>
         <div class="circle1">
             <div class="box1"></div>
@@ -59,39 +75,79 @@
         </div>
     </header>
     <!-- header end -->
+    <nav class="tel">
+        <a href="#" class="tel_btn">전화상담</a>
+        <ul class="tel_list">
+            <li><a href="#"><img src="images/icon_facebook.png" alt="페이스북"></a></li>
+            <li><a href="#"><img src="images/icon_insta.png" alt="인스타그램"></a></li>
+            <li><a href="#"><img src="images/icon_talk.png" alt="카카오톡"></a></li>
 
+          </ul>
+    </nav>
     <div id="container">
         <div class="main_visual">
             <div class="regular slider">
-                <div><img src="images/vis1.png" alt="v1"></div>
-                <div><img src="images/vis2.png" alt="v2"></div>
-                <div><img src="images/vis3.png" alt="v3"></div>
+                <div><img src="images/vis1.png" alt="home slide1"></div>
+                <div><img src="images/vis2.png" alt="home slide2"></div>
+                <div><img src="images/vis3.png" alt="home slide3"></div>
             </div>
         </div>
         <!-- slide end -->
-
+        <div class="banner_top">
+            <p><span>아이스 팩토리</span>는 <br><b>천연과일</b>을 사용하는 <b>3D 아이스크림</b> 브랜드입니다</p>
+        </div>
         <div id="best">
             <div class="tit">
-                <h3>BEST</h3><a href="#"><img src="images/more1.png" alt="more1"></a>
+                <h3>BEST</h3><a href="#"><img src="images/more2.png" alt="more2"></a>
             </div>
             <ul class="best_li">
-                <li><a href="#"><img src="images/best1.png" alt="best1"><h2>아이스크림 11종 세트</h2><p>아이스 팩토리의 11가지 맛을 다양하게 즐기는 세트</p><span>34,400 원</span></a></li>
-                <li><a href="#"><img src="images/best2.png" alt="best2"><h2>과일 샤벳 아이스바 6종</h2><p>상큼한 천연 과일 샤벳 아이스바를 6종 선택 구매</p><span>17,800 원</span></a></li>
+                <li><a href="#">
+                    <img src="images/best1.png" alt="best1">
+                    <div class="best_txt">
+                        <b>아이스팩토리 아이스크림 골라담기</b>
+                        <h1>10%</h1><h2>3,510원</h2><span>3,900원</span>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img src="images/best2.png" alt="best2">
+                    <div class="best_txt">
+                        <b>아이스팩토리 아이스크림 골라담기</b>
+                        <h1>10%</h1><h2>3,510원</h2><span>3,900원</span>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img src="images/best2.png" alt="best2">
+                    <div class="best_txt">
+                        <b>아이스팩토리 아이스크림 골라담기</b>
+                        <h1>10%</h1><h2>3,510원</h2><span>3,900원</span>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img src="images/best2.png" alt="best2">
+                    <div class="best_txt">
+                        <b>아이스팩토리 아이스크림 골라담기</b>
+                        <h1>10%</h1><h2>3,510원</h2><span>3,900원</span>
+                    </div>
+                </a></li>
             </ul>
         </div>
         <div id="flavor">
             <div class="tit">
-                <h3>FLAVOR</h3><a href="#"><img src="images/more2.png" alt="more2"></a>
+                <h3>FLAVOR</h3><a href="#"><img src="images/more1.png" alt="more1"></a>
             </div>
             <ul class="flavor_li">
-                <li><a href="#"><img src="images/fv1.png" alt="flavor1"><h2>제주 한라봉 샤벳</h2></a></li>
-                <li><a href="#"><img src="images/fv2.png" alt="flavor2"><h2>제주 천혜향 샤벳</h2></a></li>
-                <li><a href="#"><img src="images/fv3.png" alt="flavor3"><h2>수박 샤벳</h2></a></li>
-                <li><a href="#"><img src="images/fv4.png" alt="flavor4"><h2>자두 샤벳</h2></a></li>
-                <li><a href="#"><img src="images/fv5.png" alt="flavor5"><h2>복숭아 샤벳</h2></a></li>
-                <li><a href="#"><img src="images/fv6.png" alt="flavor6"><h2>망고 샤벳</h2></a></li>
+                <li><a href="#"><img src="images/fv3.png" alt="수박 샤벳"><h2>수박 샤벳</h2></a></li>
+                <li><a href="#"><img src="images/fv4.png" alt="자두 샤벳"><h2>자두 샤벳</h2></a></li>
+                <li><a href="#"><img src="images/fv5.png" alt="복숭아 샤벳"><h2>복숭아 샤벳</h2></a></li>
+                <li><a href="#"><img src="images/fv7.png" alt="밀크스트로베리"><h2>밀크스트로베리</h2></a></li>
+                <li><a href="#"><img src="images/fv8.png" alt="스트로베리"><h2>스트로베리 샤벳</h2></a></li>
+                <li><a href="#"><img src="images/fv9.png" alt="블루 레몬에이드 샤벳"><h2>블루 레몬에이드 샤벳</h2></a></li>
             </ul>
         </div>
+        <div class="banner">
+            <img src="images/banner.png" alt="배송 / 문의 / HCCP 마크 인증">
+        </div>
+    </div>
         
      <!-- container end  -->
     <footer>
@@ -117,5 +173,6 @@
              }); 
          });
     </script>
+
 </body>
 </html>

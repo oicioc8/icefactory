@@ -1,0 +1,94 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+/* container -best */
+body{background-color: #fff;}
+
+header{
+    background-color: rgba(255,255,255,0);
+}
+
+.slider_txt{
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 150px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.slider_txt h2{
+    font-size: 1em;
+    font-family: 'NanumSquareRoundR';
+}
+.slider_txt span{
+    font-size: 0.8em;
+    position: relative;
+    font-family: 'NanumSquareRoundOTFR';
+    top: -5px;
+}
+.slider_txt h3{
+    font-size: 1em;
+    margin-top: 10px;
+    font-family: 'NanumSquareRoundL';
+    color: #fff;
+}
+
+.btn {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 400px;
+    }
+
+    .btn li a{
+        display: block;
+        width: 60%;
+        height: 45px;
+        color: #fff;
+        font-size: 1.2em;
+
+        text-align: center;
+        border-radius: 2px;
+        margin: 20px auto;
+        line-height: 45px;
+        letter-spacing: 1px;
+    }
+    .btn li:first-child a{
+        background-color: #e94190;
+    }
+    .btn li:nth-child(2) a{
+        background-color: #78cadd;
+    }
+    .btn li:last-child a{
+        background-color: rgba(255,255,255,0.2);
+        color: #ffffff;
+        border: 2.5px solid rgba(255,255,255,0.5);
+        margin-top: 65px;
+    }
+
+    .join_{position: absolute;
+        top: 550px;
+        width: 100%;
+        text-align: center;
+        }
+
+    .join_arrow{
+        display: block;
+        position: relative;
+        color: #fff;
+        right: 0;
+        top: -34px;
+    }
+    .join_p{
+        position: relative;
+        display: inline-block;
+        background-color: #fff;
+        margin: 0 auto;
+        padding: 3px 10px;
+        color: #303030;
+        font-family: 'NanumSquareRoundOTFR';
+        font-size: 0.8em;
+        border-radius: 20px;
+        text-align: center;
+    }

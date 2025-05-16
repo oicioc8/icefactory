@@ -1,0 +1,240 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+/* container -best */
+body{background-color: #fff;}
+
+.tel{
+    z-index: 9999;
+    display: block;
+    position: fixed;
+    right: 3%;
+    bottom: 2%;
+}
+.tel_btn{
+    display: block;
+    position: fixed;
+    right: 3%;
+    bottom: 2%;
+    background-color: #e94190;
+    border-radius: 50px;
+    width: 65px;
+    height: 65px;
+}
+.tel_list{
+    display: none;
+    right: 4%;
+    bottom: 2%;
+    position: relative;
+    bottom: 70px;
+}
+.tel_list li{
+    margin: 10% 0;
+}
+.tel_list li a img{
+    float: bottom;
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+}
+
+.banner_top{
+    z-index: 9999;
+    width: 100%;
+    height: 100px;
+    background-color: #78cadd;
+    display: flex;
+    align-items: center;
+    margin-top: 84px
+}
+.banner_top p{
+    font-family:'NanumSquareRoundOTFR';
+    font-size: 0.9em;
+    margin: 5%;
+    display: block;
+}
+.banner_top p span{
+    font-family:'NanumSquareRoundOTFB';
+    color: #fff;
+    background-color: #e94190;
+    font-size: 1.15em;
+    padding: 0 2px;
+    margin-right: 5px;
+}
+
+
+#best{
+    display: block;
+    position: relative;
+    margin: 10px 0 35px 0;
+}
+.tit{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:end;
+    margin: 10px 0;
+}
+#best .tit h3{
+    color: #fff;
+    background-color: #e94190;
+    font-size: 1.2em;
+    display: block;
+    height: 60px;
+    border-radius: 0 30px 30px 0;
+    font-weight: 400;
+    line-height: 64px;
+    padding: 0 30px 0 20px;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+#best .tit a{
+    height: 18px;
+    margin-right: 3%;
+}
+#best .tit a img{
+    height: 100%;
+    margin-bottom: 5px;
+}
+#best .best_li{
+    width: 92%;
+    overflow: hidden;
+    margin: 20px auto;
+    margin-bottom: 0;
+}
+
+#best .best_li li{
+    float: left;
+    width: 47.5%;
+}
+#best .best_li li a{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 30px;
+}
+#best .best_li li a img{
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+}
+#best .best_li li a .best_txt{
+    display: block;
+    width: 95%;
+    margin: 5px auto;
+}
+#best .best_li li a .best_txt b{
+    display: block;
+    font-family: 'NanumSquareRoundOTFR';
+    font-size: 0.9em;
+    color: #303030;
+    margin-bottom: 5px;
+}
+
+#best .best_li li a .best_txt h1{
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 1em;
+    font-family: 'NanumSquareRoundOTFB';
+    color: #f00;
+}
+#best .best_li li a .best_txt h2{
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 1em;
+    font-family: 'NanumSquareRoundOTFEB';
+}
+#best .best_li li a .best_txt span{
+    display: inline-block;
+    color:#9e9e9e;
+    font-family: 'NanumSquareRoundOTFR';
+    font-size: 0.9em;
+    text-decoration: line-through;
+}
+
+#best .best_li li:nth-child(2n+1){
+    margin-right: 5%;
+}
+
+#best .best_li::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* li>a>img,p */
+#flavor{
+    display: block;
+    margin-bottom: 50px;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+#flavor .tit h3{
+    color: #fff;
+    background-color: #78cadd;
+    font-size: 1.2em;
+    display: block;
+    height: 60px;
+    border-radius: 0 30px 30px 0;
+    font-weight: 400;
+    line-height: 64px;
+    padding: 0 30px 0 20px;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.3);
+}
+#flavor .tit a{
+    height: 18px;
+    margin-right: 3%;
+}
+#flavor .tit a img{
+    height: 100%;
+    margin-bottom: 5px;
+}
+
+#flavor .flavor_li{
+    display: block;
+    width: 100%;
+    margin: 20px 2%;
+}
+#flavor .flavor_li li{
+    float: left;
+    width: 30%;
+    margin-right: 3%;    
+}
+
+#flavor .flavor_li li:nth-child(3){
+    margin-right: 0;
+}
+#flavor .flavor_li li:nth-child(6){
+    margin-right: 0;
+}
+
+#flavor .flavor_li li a{
+    display: block;
+    margin-bottom: 20px;
+}
+
+#flavor .flavor_li li a img{
+    width: 100%;
+    box-sizing: border-box;
+}
+#flavor .flavor_li li a h2{
+    text-align: center;
+    color: #303030;
+    font-size: 0.9em;
+    margin: 0 0 25px 0;
+}
+
+#flavor::after{content:'';display: block;clear: both;}
+
+.banner{
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 0;
+}
+.banner img{
+    width: 100%;
+}

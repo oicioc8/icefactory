@@ -1,0 +1,23 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+/* container_sub  style (join) */
+html, body{background-color: #78cadd;}
+
+#container_sub{padding: 35% 10%;}
+#container_sub::after{content: '';display: block;clear: both;}
+#container_sub h1{color: #ffffff;font-size: 1.6em;text-align: left;display: block;
+    width: 100%;
+    border-bottom: 2px solid #ffffff; margin-bottom: 40px;}
+
+form .memjoin input{width: 100%;height: 45px;padding: 10px;
+    box-sizing: border-box;margin-bottom: 15px;
+    border: 0;font-size: 1.2em;line-height: 100px;}
+
+form .agree{font-size: 0.95em;display: inline-block;width: 100%;margin: 10px 5px 5px 5px ;float: left;}
+
+form .confirm input{width: 100%;height: 45px;line-height: 45px;
+    background-color: #e94190;color: #fff;
+    font-size: 1.3em;font-weight: bold;
+    border: 0;cursor: pointer;}
